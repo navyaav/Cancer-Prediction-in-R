@@ -1,0 +1,356 @@
+data=read.csv("Desktop/fds_cancer.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'Desktop/fds_cancer.csv': No such file or directory
+> data=read.csv(Desktop/fds_cancer.csv)
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  object 'Desktop' not found
+> data=read.csv(Desktop/fds_cancer.csv)
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  object 'Desktop' not found
+> Cancer=read.csv("fds_cancer.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'fds_cancer.csv': No such file or directory
+> Cancer=read.csc("fds_cancer.csv")
+Error in read.csc("fds_cancer.csv") : could not find function "read.csc"
+> cancer=read.csv("breast_cancer.data")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'breast_cancer.data': No such file or directory
+> data=read.csv("Desktop/Fds_cancer.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'Desktop/Fds_cancer.csv': No such file or directory
+> data=read.csv("C:\Users\navya\Desktop\Fds_cancer.csv")
+Error: '\U' used without hex digits in character string starting ""C:\U"
+> data=read.csv("Users\navya\Desktop\Fds_cancer.csv")
+Error: '\D' is an unrecognized escape in character string starting ""Users\navya\D"
+> data=read.csv("Users/navya/Desktop/Fds_cancer.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'Users/navya/Desktop/Fds_cancer.csv': No such file or directory
+> library(ggplot2)
+> library(dplyr)
+> library(broom)
+> library(ggpubr)
+> Cancer=read.csv("Desktop/Fds_cancer.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'Desktop/Fds_cancer.csv': No such file or directory
+> Fds_cancer <- read.csv("C:/Users/navya/Desktop/Fds_cancer.csv")
+>   View(Fds_cancer)
+> Fds_cancer <- read.csv("C:/Users/navya/Desktop/Fds_cancer.csv")
+>  
+> View(Fds_cancer)
+> Fds_cancer.features=Fds_cancer
+> Fds_cancer.features$class <- NULL
+> View(Fds_cancer.features)
+> results <- kmeans(Fds_cancer.features,2)
+> results
+K-means clustering with 2 clusters of sizes 445, 124
+
+Cluster means:
+  mean_radius mean_texture
+1    12.59721     18.57845
+2    19.61831     21.84194
+  mean_perimeter mean_area
+1       81.45276   499.667
+2      129.70887  1211.936
+  mean_smoothness  diagnosis
+1      0.09525933 0.79775281
+2      0.10031129 0.01612903
+
+Clustering vector:
+  [1] 2 2 2 1 2 1 2 1 1 1 1 1
+ [13] 2 1 1 1 1 1 2 1 1 1 1 2
+ [25] 2 2 1 2 1 2 2 1 2 2 1 2
+ [37] 1 1 1 1 1 1 2 1 1 2 1 1
+ [49] 1 1 1 1 1 2 1 1 2 1 1 1
+ [61] 1 1 1 1 1 1 1 1 1 1 2 1
+ [73] 2 1 1 1 1 2 2 1 1 1 2 2
+ [85] 1 2 1 2 1 1 1 1 1 1 1 2
+ [97] 1 1 1 1 1 1 1 1 1 1 1 1
+[109] 2 1 1 1 1 1 1 1 1 1 1 2
+[121] 1 2 2 1 1 1 1 2 1 2 1 1
+[133] 1 1 2 1 1 1 1 1 1 1 1 1
+[145] 1 1 1 1 1 1 1 1 1 1 1 1
+[157] 2 2 1 1 1 2 2 1 2 1 1 2
+[169] 2 1 1 1 1 1 1 1 1 1 1 1
+[181] 2 2 1 1 1 1 2 1 1 1 1 1
+[193] 1 1 1 1 1 2 2 1 1 2 2 1
+[205] 1 1 1 2 1 1 2 1 2 2 1 1
+[217] 1 1 2 2 1 1 1 1 1 1 1 1
+[229] 1 1 2 1 1 2 1 1 2 2 1 2
+[241] 1 1 1 1 2 1 1 1 1 1 2 1
+[253] 2 2 2 1 2 1 1 1 2 2 2 1
+[265] 2 2 1 1 1 1 1 1 2 1 2 1
+[277] 1 2 1 1 2 1 2 1 1 1 1 1
+[289] 1 1 1 1 1 1 1 1 1 1 1 1
+[301] 2 1 2 1 1 1 1 1 1 1 1 1
+[313] 1 1 1 1 1 2 1 1 1 2 1 2
+[325] 1 1 1 1 1 1 1 1 1 1 1 2
+[337] 1 2 1 2 1 1 1 2 1 1 1 1
+[349] 1 1 1 1 2 1 1 1 1 1 1 1
+[361] 1 1 1 1 1 2 2 1 2 2 1 1
+[373] 2 2 1 1 1 1 1 1 1 1 1 1
+[385] 1 1 1 1 1 2 1 1 1 2 1 1
+[397] 1 1 1 1 2 1 1 1 1 1 1 1
+[409] 2 1 1 1 1 1 1 1 1 1 1 1
+[421] 1 1 1 1 1 1 1 1 1 1 1 1
+[433] 2 2 1 1 1 1 1 1 1 2 1 1
+[445] 2 1 2 1 1 2 1 2 1 1 1 1
+[457] 1 1 1 1 2 2 1 1 1 1 1 1
+[469] 2 1 1 1 1 1 1 1 1 1 1 1
+[481] 1 1 1 1 1 1 1 2 1 2 1 2
+[493] 2 1 1 1 1 1 2 2 1 1 1 2
+[505] 1 1 1 1 1 1 1 1 1 1 1 1
+[517] 2 2 1 1 1 2 1 1 1 1 1 1
+[529] 1 1 1 1 1 2 1 2 1 1 1 1
+[541] 1 1 1 1 1 1 1 1 1 1 1 1
+[553] 1 1 1 1 1 1 1 1 1 1 1 2
+[565] 2 2 2 2 1
+
+Within cluster sum of squares by cluster:
+[1] 10056196 11209123
+ (between_SS / total_SS =  69.9 %)
+
+Available components:
+
+[1] "cluster"     
+[2] "centers"     
+[3] "totss"       
+[4] "withinss"    
+[5] "tot.withinss"
+[6] "betweenss"   
+[7] "size"        
+[8] "iter"        
+[9] "ifault"      
+> results$size
+[1] 445 124
+> results$cluster
+  [1] 2 2 2 1 2 1 2 1 1 1 1 1
+ [13] 2 1 1 1 1 1 2 1 1 1 1 2
+ [25] 2 2 1 2 1 2 2 1 2 2 1 2
+ [37] 1 1 1 1 1 1 2 1 1 2 1 1
+ [49] 1 1 1 1 1 2 1 1 2 1 1 1
+ [61] 1 1 1 1 1 1 1 1 1 1 2 1
+ [73] 2 1 1 1 1 2 2 1 1 1 2 2
+ [85] 1 2 1 2 1 1 1 1 1 1 1 2
+ [97] 1 1 1 1 1 1 1 1 1 1 1 1
+[109] 2 1 1 1 1 1 1 1 1 1 1 2
+[121] 1 2 2 1 1 1 1 2 1 2 1 1
+[133] 1 1 2 1 1 1 1 1 1 1 1 1
+[145] 1 1 1 1 1 1 1 1 1 1 1 1
+[157] 2 2 1 1 1 2 2 1 2 1 1 2
+[169] 2 1 1 1 1 1 1 1 1 1 1 1
+[181] 2 2 1 1 1 1 2 1 1 1 1 1
+[193] 1 1 1 1 1 2 2 1 1 2 2 1
+[205] 1 1 1 2 1 1 2 1 2 2 1 1
+[217] 1 1 2 2 1 1 1 1 1 1 1 1
+[229] 1 1 2 1 1 2 1 1 2 2 1 2
+[241] 1 1 1 1 2 1 1 1 1 1 2 1
+[253] 2 2 2 1 2 1 1 1 2 2 2 1
+[265] 2 2 1 1 1 1 1 1 2 1 2 1
+[277] 1 2 1 1 2 1 2 1 1 1 1 1
+[289] 1 1 1 1 1 1 1 1 1 1 1 1
+[301] 2 1 2 1 1 1 1 1 1 1 1 1
+[313] 1 1 1 1 1 2 1 1 1 2 1 2
+[325] 1 1 1 1 1 1 1 1 1 1 1 2
+[337] 1 2 1 2 1 1 1 2 1 1 1 1
+[349] 1 1 1 1 2 1 1 1 1 1 1 1
+[361] 1 1 1 1 1 2 2 1 2 2 1 1
+[373] 2 2 1 1 1 1 1 1 1 1 1 1
+[385] 1 1 1 1 1 2 1 1 1 2 1 1
+[397] 1 1 1 1 2 1 1 1 1 1 1 1
+[409] 2 1 1 1 1 1 1 1 1 1 1 1
+[421] 1 1 1 1 1 1 1 1 1 1 1 1
+[433] 2 2 1 1 1 1 1 1 1 2 1 1
+[445] 2 1 2 1 1 2 1 2 1 1 1 1
+[457] 1 1 1 1 2 2 1 1 1 1 1 1
+[469] 2 1 1 1 1 1 1 1 1 1 1 1
+[481] 1 1 1 1 1 1 1 2 1 2 1 2
+[493] 2 1 1 1 1 1 2 2 1 1 1 2
+[505] 1 1 1 1 1 1 1 1 1 1 1 1
+[517] 2 2 1 1 1 2 1 1 1 1 1 1
+[529] 1 1 1 1 1 2 1 2 1 1 1 1
+[541] 1 1 1 1 1 1 1 1 1 1 1 1
+[553] 1 1 1 1 1 1 1 1 1 1 1 2
+[565] 2 2 2 2 1
+> table(Fds_cancer$class, results$cluster)
+Error in table(Fds_cancer$class, results$cluster) : 
+  all arguments must have the same length
+> results <- kmeans(Fds_cancer.features,5)
+> results
+K-means clustering with 5 clusters of sizes 155, 116, 12, 197, 89
+
+Cluster means:
+  mean_radius mean_texture
+1    10.52303     17.93368
+2    15.59293     20.09845
+3    24.91250     22.54667
+4    12.99411     18.61868
+5    19.54820     21.64303
+  mean_perimeter mean_area
+1       67.41381  341.7994
+2      102.17767  756.1233
+3      167.21667 1934.1667
+4       83.88239  521.3924
+5      129.18202 1191.2180
+  mean_smoothness  diagnosis
+1      0.09639806 0.97419355
+2      0.09845267 0.34482759
+3      0.10790000 0.00000000
+4      0.09275868 0.83756345
+5      0.09998348 0.01123596
+
+Clustering vector:
+  [1] 5 5 5 1 5 4 5 4 4 4 2 2
+ [13] 5 2 4 2 2 2 5 4 4 1 2 5
+ [25] 2 2 2 5 2 2 5 4 2 5 2 2
+ [37] 4 4 2 4 4 1 5 4 4 5 1 4
+ [49] 4 4 1 4 4 5 2 1 5 2 4 1
+ [61] 1 1 2 1 4 2 1 1 1 4 5 1
+ [73] 2 4 4 2 4 5 5 4 1 4 3 5
+ [85] 4 5 2 5 4 2 2 2 4 4 2 5
+ [97] 4 1 1 2 4 1 4 1 1 4 1 4
+[109] 5 1 1 4 4 1 1 4 1 2 2 5
+[121] 1 5 3 2 4 4 4 5 2 5 4 2
+[133] 2 2 5 4 1 1 2 1 1 2 1 4
+[145] 1 4 4 2 2 4 4 1 1 1 4 4
+[157] 2 2 4 1 1 5 5 4 3 2 1 2
+[169] 5 2 4 4 2 1 1 1 1 2 4 4
+[181] 3 5 2 1 2 1 5 1 1 4 4 4
+[193] 1 4 2 4 4 5 5 2 4 2 3 4
+[205] 4 2 1 2 4 2 5 1 3 2 4 4
+[217] 4 1 5 5 4 4 1 2 4 2 1 2
+[229] 4 4 2 1 1 5 1 4 3 5 4 2
+[241] 4 4 1 4 5 1 4 4 1 1 5 1
+[253] 5 2 5 4 5 2 2 2 5 2 2 2
+[265] 2 5 1 4 4 1 4 1 5 1 5 4
+[277] 1 5 4 4 5 1 5 2 4 4 4 4
+[289] 1 1 2 2 4 4 4 4 1 1 4 1
+[301] 5 4 5 1 1 1 4 1 4 4 1 2
+[313] 4 1 1 4 4 5 1 4 1 5 4 5
+[325] 4 4 4 4 2 2 2 4 1 1 4 2
+[337] 4 5 1 3 2 1 1 5 1 1 4 2
+[349] 1 1 1 2 3 2 1 4 4 4 1 1
+[361] 4 4 4 2 4 5 5 4 5 5 2 2
+[373] 5 5 4 2 1 4 4 1 1 1 4 4
+[385] 4 2 4 4 1 5 1 1 2 5 4 4
+[397] 4 4 1 4 5 4 4 4 4 1 2 4
+[409] 5 4 1 1 1 2 2 4 1 2 4 1
+[421] 1 2 1 4 1 1 1 1 1 4 2 4
+[433] 5 5 2 4 4 4 4 4 1 2 4 1
+[445] 5 4 5 2 2 5 4 5 4 2 4 4
+[457] 1 4 4 1 2 3 2 1 4 4 4 1
+[469] 5 1 1 4 2 4 1 4 4 4 1 2
+[481] 4 4 4 4 2 4 2 5 1 2 4 5
+[493] 5 4 4 2 4 4 5 5 2 4 4 3
+[505] 1 1 4 1 2 2 1 2 4 2 2 1
+[517] 5 5 4 4 1 3 1 4 1 1 4 4
+[529] 4 4 1 1 4 5 1 5 4 1 1 1
+[541] 1 2 2 4 4 4 1 1 1 1 1 1
+[553] 4 1 4 1 1 1 2 1 4 1 2 5
+[565] 5 5 2 5 1
+
+Within cluster sum of squares by cluster:
+[1]  707999.1 1085942.1
+[3] 1081880.5  610076.5
+[5] 1760140.5
+ (between_SS / total_SS =  92.6 %)
+
+Available components:
+
+[1] "cluster"     
+[2] "centers"     
+[3] "totss"       
+[4] "withinss"    
+[5] "tot.withinss"
+[6] "betweenss"   
+[7] "size"        
+[8] "iter"        
+[9] "ifault"      
+> table(Fds_cancer$class, results$cluster)
+Error in table(Fds_cancer$class, results$cluster) : 
+  all arguments must have the same length
+> length(Fds_cancer)
+[1] 6
+> length(results)
+[1] 9
+> View(results)
+> View(Fds_cancer)
+> View(results)
+> View(Fds_cancer)
+> plot(Fds_cancer[c("mean_radius","mean_texture")],col=results$cluster)
+> plot(Fds_cancer[c("mean_radius","mean_texture")],col=results$class)
+> plot(Fds_cancer[c("mean_perimeter","mean_area")],col=results$class)
+> plot(Fds_cancer[c("mean_perimeter","mean_area")],col=results$cluster)
+> results <- kmeans(Fds_cancer.features,2)
+> length(results)
+[1] 9
+> results <- kmeans(Fds_cancer.features,4)
+> length(results)
+[1] 9
+> rng<-2:20 #K from 2 to 20
+tries<-100 #Run the K Means algorithm 100 times
+avg.totw.ss<-integer(length(rng)) #Set up an empty vector to hold all of points
+for(v in rng){ # For each value of the range variable
+v.totw.ss<-integer(tries) #Set up an empty vector to hold the 100 tries
+for(i in 1:tries){
+results.temp<-kmeans(Fds_cancer.features.top,centers=v) #Run kmeans
+v.totw.ss[i]<-results.temp$tot.withinss#Store the total withinss
+}
+avg.totw.ss[v-1]<-mean(v.totw.ss) #Average the 100 total withinss
+}
+plot(rng,avg.totw.ss,type="b", main="Total Within SS by Various K",
+ylab="Average Total Within Sum of Squares",
+xlab="Value of K")
+
+
+NEATLY
+
+Fds_cancer <- read.csv("C:/Users/navya/Desktop/Fds_cancer.csv")
+View(Fds_cancer)
+Fds_cancer.features=Fds_cancer
+View(Fds_cancer.features)
+summary(Fds_cancer)
+plot(Fds_cancer)
+#scale the data
+plot(Fds_cancer.features)
+Fds_cancerScaled <- scale(Fds_cancer[, -6])
+Fds_cancerScaled
+plot(Fds_cancerScaled)
+results <- kmeans(Fds_cancer.features, 2)
+results
+str(results)
+plot(Fds_cancer, col= results$cluster)
+
+#choosing K
+k <- list()
+for(i in 1:10){
+  k[[i]] <- kmeans(Fds_cancerScaled,i)
+}
+
+k
+
+betweenss_totss <- list()
+for(i in 1:10){
+  betweenss_totss[[i]] <- k[[i]]$betweenss/k[[i]]$totss
+}
+plot(1:10, betweenss_totss, type = "b",
+    ylab = "Between SS / Total SS", xlab = "Clusters(k)")
+# K= 2 since elbow point is at 2
+
+
+for(i in 1:4){
+  plot(Fds_cancer, col=k[[i]]$cluster)
+}
+
+# Thus data is clustered with K=2
